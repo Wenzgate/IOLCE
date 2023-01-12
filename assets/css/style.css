@@ -1,0 +1,196 @@
+
+/* Mobile */
+@media (max-width: 480px) {
+    .navigation__columns__desktop{
+        display: none;
+    }
+
+    .navigation__columns__mobile{
+        display: grid;
+        grid-template-columns: 100px 1fr 100px;
+        align-items: center;
+        justify-items: center;
+        width: 100vw;
+    }
+
+    .menuButton{
+        box-sizing: content-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+    }
+    
+    #menuButton__svg{
+        width: 8px;
+        margin-right: 0.85vw;
+    }
+    
+    .menuButton__text{
+        margin-left: 0.85vw;
+        text-indent: 3.25px;
+    }
+
+    .navigation {
+        display: grid;
+        position: absolute;
+        width: 100vw;
+        height: 75px;
+        background-color: red;
+        justify-items: center;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 3.25px;
+        text-transform: uppercase;
+        color: #333333;
+        font-size: 12.7px;
+    }
+
+    .gridTemplate{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url('../img/grid_mobile.png');
+        z-index: 100;
+    }
+  }
+/* Mobile */
+
+
+/* Tablette */
+@media (min-width: 481px) and (max-width: 1279px) {
+    .navigation__columns__desktop{
+        display: none;
+    }
+
+    .navigation__columns__mobile{
+        display: grid;
+        grid-template-columns: 2fr 9fr 2fr;
+        align-items: center;
+        justify-items: center;
+        width: 100vw;
+    }
+
+    .menuButton{
+        box-sizing: content-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+    }
+    
+    #menuButton__svg{
+        width: 8px;
+        margin-right: 0.39vw;
+    }
+    
+    .menuButton__text{
+        margin-left: 0.39vw;
+        text-indent: 3.25px;
+    }
+
+    .navigation {
+        display: grid;
+        position: absolute;
+        width: 100vw;
+        height: 90px;
+        background-color: red;
+        justify-items: center;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 3.25px;
+        text-transform: uppercase;
+        color: #333333;
+        font-size: 12.7px;
+    }
+  }
+
+ 
+/* Desktop */
+ @media (min-width: 1280px) {
+   .navigation__columns__mobile{
+       display: none;
+   }
+
+   .navigation__columns__desktop{
+    display: grid;
+    grid-template-columns: 120px 61.72fr 165px 165px 165px 120px  ;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    }
+
+    .menuButton{
+        box-sizing: content-box;
+        display: flex;
+        /* grid-template-columns: 100%; */
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+    }
+    
+    #menuButton__svg{
+        width: 8px;
+        margin-right: 0.39vw;
+        /* grid-column: 1/1;
+        justify-self: start;
+        margin-left: 25%; */
+    }
+    
+    .menuButton__text{
+        margin-left: 0.39vw;
+        text-indent: 3.25px;
+        /* grid-column: 2/2;
+        justify-self: end;
+        margin-right: 25px; */
+        
+        
+    }
+
+    .navigation {
+        display: grid;
+        position: absolute;
+        width: 100vw;
+        height: 90px;
+        background-color: red;
+        justify-items: center;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 3.25px;
+        text-transform: uppercase;
+        color: #333333;
+        font-size: 12.5px;
+    }
+
+    .gridTemplate{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url('../img/grid_desktop.png');
+        z-index: 100;
+    }
+}
+/* Desktop */
+
+body{
+    margin: 0;
+    
+}
+
+
+
+
+
